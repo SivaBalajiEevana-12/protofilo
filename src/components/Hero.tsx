@@ -94,21 +94,18 @@ export default function Hero() {
         </div>
 
         {/* Contact */}
-        <Button
-          variant="outline"
-          className="
+        <a
+          href="mailto:eevanasivabalaji@gmail.com"
+          className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm font-medium transition-colors
             border-white/20
             bg-white/5
             text-white
             hover:bg-white/10
             hover:text-white
           "
-          asChild
         >
-          <a href="mailto:eevanasivabalaji@gmail.com">
-            Let's Talk
-          </a>
-        </Button>
+          Let's Talk
+        </a>
       </nav>
 
       {/* Hero Content */}
@@ -140,22 +137,19 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button
-                size="lg"
-                className="
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium
                   bg-white
                   text-black
                   transition-transform
                   hover:-translate-y-1
                   hover:bg-white/90
                 "
-                asChild
               >
-                <a href="#projects">
-                  View My Work
-                  <ArrowDown className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
+                View My Work
+                <ArrowDown className="ml-2 h-4 w-4" />
+              </a>
 
               <Button
                 size="lg"
@@ -179,7 +173,7 @@ export default function Hero() {
               </SocialButton>
 
               <SocialButton href="https://linkedin.com/in/sivabalajieevana">
-                <FaLinkedin className="h-4 w-4" />
+                <FaLinkedin className="h-4 w-4" />  
               </SocialButton>
 
               <SocialButton href="mailto:eevanasivabalaji@gmail.com">
