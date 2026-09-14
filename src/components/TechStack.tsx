@@ -6,6 +6,7 @@ import {
  
   Globe,
   Layers3,
+  MessageCircle,
   Server,
 
   Wrench,
@@ -47,6 +48,23 @@ const categories = [
     icon: Layers3,
     items: ["Razorpay", "Gupshup", "Cloud Deployment"],
   },
+  {
+  title: "CS Fundamentals",
+  icon: Layers3,
+  items: [
+    "DSA",
+    "OOP",
+    "DBMS",
+    "Operating Systems",
+    "Computer Networks",
+    "Problem Solving",
+  ],
+},
+{
+  title: "Spoken Languages",
+  icon: MessageCircle,
+  items: ["English", "Telugu"],
+},
 ];
 
 export default function TechStack() {
