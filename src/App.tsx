@@ -6,15 +6,21 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import TechStack from "./components/TechStack";
 import Contact from "./components/Contact";
+import GithubSummary from "./components/GithubSummary";
+import Skills from "./components/Skills";
+import LeetcodeStats from "./components/LeetcodeStats";
 
 function App() {
   return (
     <main>
       <Hero />
 <SkillsMarquee />
+<Skills />
 <About />
 <Projects />
 <Experience />
+<GithubSummary />
+<LeetcodeStats />
 <Timeline />
 <TechStack />
 <Contact />

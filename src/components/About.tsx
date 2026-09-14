@@ -1,20 +1,21 @@
 import { ArrowUpRight } from "lucide-react";
 
 const stats = [
-  {
-    value: "400+",
-    label: "LeetCode",
-    description: "Problems solved",
-  },
+ 
   {
     value: "8.58",
     label: "B.Tech CGPA",
-    description: "Andhra University",
+    description: "Computer Science and Engineering Andhra University",
   },
   {
     value: "96.4%",
     label: "Diploma",
-    description: "Computer Science",
+    description: "Computer Science in Smt B seetha polytechnic college",
+  },
+   {
+    value: "10/10",
+    label: "SSC",
+    description: "Board of Secondary Education",
   },
 ];
 
