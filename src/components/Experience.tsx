@@ -138,7 +138,7 @@ export default function Experience() {
             <div className="space-y-5">
               {experience.responsibilities.map((item, index) => {
                 const Icon = item.icon;
-
+                console.log("Icon:", index); // Debugging line to check the value of Icon
                 return (
                   <div
                     key={item.title}

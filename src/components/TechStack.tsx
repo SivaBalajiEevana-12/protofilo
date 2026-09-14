@@ -1,13 +1,13 @@
 import {
   Braces,
-  Cloud,
+  
   Code2,
   Database,
-  GitBranch,
+ 
   Globe,
   Layers3,
   Server,
-  Terminal,
+
   Wrench,
 } from "lucide-react";
 
