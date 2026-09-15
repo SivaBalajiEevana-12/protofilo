@@ -1,202 +1,116 @@
-🔗 LinkZip
-A modern full-stack URL shortener built with React, TypeScript, Node.js, Express, MongoDB, and JWT authentication.
+# 🔗 LinkZip
 
-LinkZip allows users to create short URLs, manage their links, track clicks, and view detailed click analytics.
+> A full-stack URL shortener that lets users create, manage, and track shortened URLs with detailed click analytics.
 
-🚀 Live Demo
-Frontend: https://linkzip-kappa.vercel.app
+## 🌐 Live Demo
 
-Backend:
+- **Frontend:** https://linkzip-kappa.vercel.app
+- **Backend:** https://server-iota-two-26.vercel.app
 
-✨ Features
-🔐 User registration and login
+## ✨ Features
 
-🍪 JWT authentication with HTTP-only cookies
+- 🔐 User registration and login
+- 🍪 JWT authentication using HTTP-only cookies
+- 🔗 Create shortened URLs
+- ✏️ Custom URL aliases
+- ⏳ URL expiration
+- 📊 Click analytics
+- 👤 Personal dashboard
+- 📋 Copy shortened URLs
+- ✏️ Update existing links
+- 🗑️ Delete links
+- 📱 Responsive UI
+- 🔍 Detailed click information
 
-🔗 Create short URLs
+## 🛠️ Tech Stack
 
-✏️ Custom URL aliases
+### Frontend
 
-⏳ Link expiration
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Redux Toolkit
+- React Router
+- Axios
+- Lucide React
 
-📊 Click tracking and analytics
+### Backend
 
-👤 User dashboard
+- Node.js
+- Express.js
+- TypeScript
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+- NanoID
+- CORS
+- Cookie Parser
 
-📋 Copy shortened URLs
+## 📂 Project Structure
 
-🗑️ Delete links
-
-🔍 View individual link details
-
-📱 Responsive UI
-
-🛠️ Tech Stack
-Frontend
-React
-
-TypeScript
-
-Vite
-
-Tailwind CSS
-
-shadcn/ui
-
-Redux Toolkit
-
-React Router
-
-Axios
-
-Lucide React
-
-Backend
-Node.js
-
-Express.js
-
-TypeScript
-
-MongoDB
-
-Mongoose
-
-JWT
-
-bcryptjs
-
-NanoID
-
-CORS
-
-Cookie Parser
-
-📁 Project Structure
+```text
 LinkZip/
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
+│   │   │   ├── Navbar.tsx
+│   │   │   └── ProtectedRoute.tsx
+│   │   │
 │   │   ├── pages/
+│   │   │   ├── Home.tsx
+│   │   │   ├── Login.tsx
+│   │   │   ├── Register.tsx
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── CreateLink.tsx
+│   │   │   ├── LinkDetails.tsx
+│   │   │   ├── Redirect.tsx
+│   │   │   └── NotFound.tsx
+│   │   │
 │   │   ├── services/
+│   │   │   └── api.ts
+│   │   │
 │   │   ├── stores/
+│   │   │   ├── authSlice.ts
+│   │   │   └── store.ts
+│   │   │
 │   │   ├── types/
+│   │   │   └── index.ts
+│   │   │
 │   │   ├── App.tsx
-│   │   └── main.tsx
+│   │   ├── main.tsx
+│   │   └── index.css
+│   │
 │   └── package.json
 │
 ├── server/
 │   ├── src/
 │   │   ├── config/
+│   │   │   └── db.ts
+│   │   │
 │   │   ├── controller/
+│   │   │   ├── user.ts
+│   │   │   ├── link.ts
+│   │   │   └── click.ts
+│   │   │
 │   │   ├── middleware/
+│   │   │   └── auth.ts
+│   │   │
 │   │   ├── models/
+│   │   │   ├── user.ts
+│   │   │   ├── link.ts
+│   │   │   └── click.ts
+│   │   │
 │   │   ├── routes/
-│   │   ├── app.ts
+│   │   │   ├── user.ts
+│   │   │   ├── link.ts
+│   │   │   └── click.ts
+│   │   │
 │   │   └── index.ts
+│   │
 │   └── package.json
 │
 └── README.md
-⚙️ Installation
-Clone the repository:
-
-git clone https://github.com/SivaBalajiEevana-12/LinkZip.git
-cd LinkZip
-Frontend
-cd frontend
-npm install
-npm run dev
-Backend
-cd server
-npm install
-npm run dev
-🔐 Environment Variables
-Create .env inside the server directory:
-
-MONGO_URI=your_mongodb_connection_string
-
-JWT_SECRET=your_jwt_secret
-JWT_REFRESH_SECRET=your_refresh_token_secret
-
-PORT=3000
-📡 API Endpoints
-Authentication
-POST /api/user/register
-POST /api/user/login
-POST /api/user/refresh
-POST /api/user/logout
-GET  /api/user/me
-Links
-POST   /api/link
-GET    /api/link
-GET    /api/link/:id
-PUT    /api/link/:id
-DELETE /api/link/:id
-Click Tracking
-GET /c/:shortCode
-GET /c/details/:linkId
-🔄 How It Works
-User enters original URL
-          ↓
-      LinkZip API
-          ↓
-    Generate shortCode
-          ↓
-       MongoDB
-          ↓
- Short URL generated
-          ↓
- User opens short URL
-          ↓
- Click tracking
-          ↓
- Redirect to original URL
-📊 Analytics
-For each shortened link, LinkZip tracks:
-
-Total clicks
-
-Unique clicks
-
-IP address
-
-User agent
-
-Browser
-
-Device
-
-Operating system
-
-Referer
-
-Country
-
-Click timestamp
-
-🔒 Security
-HTTP-only authentication cookies
-
-Separate access and refresh JWT secrets
-
-Password hashing with bcrypt
-
-Protected API routes
-
-CORS configuration
-
-Authentication middleware
-
-🏗️ Build for Production
-Frontend
-cd frontend
-npm run build
-Backend
-cd server
-npm run build
-npm start
-👨‍💻 Author
-Siva Balaji Eevana
-
-GitHub:
-https://github.com/SivaBalajiEevana-12
