@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import GithubSummary from "./components/GithubSummary";
 import Skills from "./components/Skills";
 import LeetcodeStats from "./components/LeetcodeStats";
+import HackerRank from "./components/HackerRank";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 <Experience />
 <GithubSummary />
 <LeetcodeStats />
+<HackerRank />
 <Timeline />
 <TechStack />
 <Contact />
