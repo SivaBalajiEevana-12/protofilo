@@ -117,7 +117,7 @@ export default function GithubSummary() {
               value={user.public_repos}
             />
 
-            <StatCard
+            {/* <StatCard
               icon={<Users size={18} />}
               label="Followers"
               value={user.followers}
@@ -127,7 +127,7 @@ export default function GithubSummary() {
               icon={<Star size={18} />}
               label="Following"
               value={user.following}
-            />
+            /> */}
           </div>
         ) : (
           <div className="border border-white/10 bg-white/[0.02] p-6 text-sm text-zinc-500">
