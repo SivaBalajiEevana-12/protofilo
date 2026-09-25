@@ -7,7 +7,7 @@ import {
   Workflow,
   Radio,
   BookOpen,
-  Terminal,
+ 
 } from "lucide-react";
 
 const skills = [
