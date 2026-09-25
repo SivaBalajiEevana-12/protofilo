@@ -186,9 +186,6 @@ export default function GithubSummary() {
   );
 }
 
-/* ---------------------------------- */
-/* Stat Card                           */
-/* ---------------------------------- */
 
 function StatCard({
   icon,
