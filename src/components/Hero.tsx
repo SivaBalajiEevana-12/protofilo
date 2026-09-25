@@ -151,19 +151,24 @@ export default function Hero() {
                 <ArrowDown className="ml-2 h-4 w-4" />
               </a>
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="
-                  border-white/20
-                  bg-white/5
-                  text-white
-                  hover:bg-white/10
-                  hover:text-white
-                "
-              >
-                Download Resume
-              </Button>
+              <a
+  href="/resume.pdf"
+  download="Siva-Balaji-Eevana-Resume.pdf"
+>
+  <Button
+    size="lg"
+    variant="outline"
+    className="
+      border-white/20
+      bg-white/5
+      text-white
+      hover:bg-white/10
+      hover:text-white
+    "
+  >
+    Download Resume
+  </Button>
+</a>
             </div>
 
             {/* Social Links */}
@@ -236,7 +241,7 @@ export default function Hero() {
               }}
             >
               <img
-                src="/profile.jpg"
+                src="/profile.png"
                 alt="Siva Balaji"
                 className="
                   h-full
